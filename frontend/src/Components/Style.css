@@ -1,0 +1,165 @@
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar */
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;  
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #464646;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/* Landing */
+.landing{  
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    animation: fadein 1s;
+    margin-right: auto;    
+}
+.logoimg{    
+    height: 10vh;
+}
+.head{
+    animation: fadein 1s;
+    font-family: Homenaje;    
+    display: flex;
+    flex-direction: column;    
+    height: 50vh;
+    color: white;
+    /* background-color: red; */
+}
+.head h2{
+    margin-top: auto;
+    font-size:80px;
+}
+.head h1{    
+    font-size: 120px;
+}
+.landingbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    animation: fadein 1s;
+}
+.landingbtn:hover{
+    cursor: pointer;
+}
+.landingbtn button{    
+    font-family: Homenaje;    
+    padding-left: 25px;
+    padding-right: 25px;    
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-top: 180px;    
+}
+.landingbtn button:hover{    
+    background-color: rgb(18, 18, 18);
+}
+.icon{
+    margin-top: 10px;
+    animation: lev 3s infinite;
+}
+/* Events on Landing */
+
+.landevents{
+    height: 100vh;
+    background-color: black;
+    padding-top: 100px;
+}
+.eventcard{
+    background-color: #2F2F2F;
+    height: 500px;    
+    width: 360px;
+    border-radius: 10px;
+}
+.cards{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-family: Homenaje;
+    color: white;
+}
+.eventdiv{        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eventtitle{
+    margin-top: 20px;
+}
+.cardcont{    
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.part{
+    display: flex;
+    font-size: 25px;    
+}
+.game{    
+    display: flex;
+    font-size: 25px;
+}
+.poster{
+    border-radius: 10px 10px 0 0;
+    background-color: blue;
+    height: 360px;
+    width: 360px;
+}
+.viewallbtn{
+    font-family: Homenaje;    
+    padding-left: 25px;
+    padding-right: 25px;    
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-top: 30px;    
+}
+button:focus{
+    outline: none;
+}
+/* Animations */
+
+@keyframes lev {           
+    50%{
+        margin-top: 15px;                
+    }    
+}
+@keyframes fadein {           
+    0%{
+        opacity: 0;
+    }    
+    100%{
+        opacity: 100%;
+    }
+}
+
