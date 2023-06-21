@@ -147,6 +147,31 @@ p{
 button:focus{
     outline: none;
 }
+
+/* ALL EVENTS */
+
+.alleventcont{
+    padding-bottom: 100px;
+    background-color: black;  
+    font-family: Homenaje;  
+    color: white;
+}
+.alleventheader{
+    display: flex;
+}
+.alleventhead{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto; 
+    font-size: 70px;
+}
+.alleventbody{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+}
 /* Animations */
 
 @keyframes lev {           

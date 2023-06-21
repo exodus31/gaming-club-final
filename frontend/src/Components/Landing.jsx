@@ -3,6 +3,8 @@ import logo from '../logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faUser, faGamepad } from '@fortawesome/free-solid-svg-icons'
 import poster from '../rl.png'
+import {Link} from 'react-router-dom'
+
 function Landing() {
     const ref = useRef(null);
     const handleClick = () => {
@@ -84,7 +86,9 @@ function Landing() {
                 </div>
             </div>      
             </div>      
-        <button className='viewallbtn'>VIEW ALL</button>
+            <Link to="/allevents">
+                <button className='viewallbtn' >VIEW ALL</button>
+            </Link>
         </div>
     </>
   )
